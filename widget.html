@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ElevenLabs Widget</title>
+  <title>Centered ElevenLabs Widget</title>
   <style>
     body {
-      margin: 100vm;
-      height: 400vh;
+      margin: 0;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
+    elevenlabs-convai {
+      position: static !important; /* 기존 고정 스타일 무효화 */
+      transform: none !important;  /* 위치 보정도 제거 */
+    }
   </style>
 </head>
 <body>
-  <div>
-    <elevenlabs-convai agent-id="37uMwrbBDQMne7HkkDBM"></elevenlabs-convai>
-  </div>
+  <elevenlabs-convai agent-id="37uMwrbBDQMne7HkkDBM"></elevenlabs-convai>
   <script src="https://elevenlabs.io/convai-widget/index.js" async></script>
 </body>
 </html>
